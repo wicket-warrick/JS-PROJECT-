@@ -3,7 +3,7 @@ article {
   height: 200px;
   perspective: 500px;
   transition: transform 1s;
-  /* transition: transform 1s; */
+  -webkit-transition: transform 1s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   margin: 0.5rem;
@@ -42,6 +42,7 @@ article {
   -webkit-transform: rotateY(180deg);
 
   transition: transform 1s;
+  -webkit-transition: transform 1s;
 }
 #empty-cell {
   display: none;
