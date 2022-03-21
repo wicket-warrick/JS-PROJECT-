@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap");
+:root {
+  --fontSizeBase: 18px;
+  --fontSizeCaptionText: 14px;
+  --fontSizeH1: 55px;
+  --fontSizeH2: 44px;
+  --fontSizeH3: 35px;
+  --fontSizeH4: 28px;
+  --fontSizeH5: 23px;
+  --colorBasicBlack: #172121;
+  --colorYellow: hsl(60, 100%, 50%, 0.5);
+  --colorWhite: hsl(160, 10%, 94%, 0.7);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.5;
+  color: var(--colorBasicBlack);
+}
+body {
+  background: linear-gradient(135deg, var(--colorYellow), var(--colorWhite)),
+    url(../imaxes/emojisBackground.jpg) no-repeat center center / cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--colorBasicBlack);
+}
+h1 {
+  letter-spacing: 1rem;
+  text-align: center;
+  flex-grow: 3;
+  font-size: var(--fontSizeH1);
+}
+header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+main {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-auto-rows: 150px 1fr;
+  grid-template-areas:
+    "playboard scoreboard"
+    "playboard brief";
+}
+#brief {
+  grid-area: brief;
+}
+#scoreboard {
+  grid-area: scoreboard;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  outline: solid 4px var(--colorBasicBlack);
+  margin-right: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: var(--colorBasicBlack);
+  font-size: 18px;
+  gap: 32px;
+}
+#playboard {
+  justify-self: center;
+  align-content: center;
+  transition: opacity 1s;
+  justify-items: center;
+  grid-template-columns: 200px 200px 200px 200px;
+  display: grid;
+  grid-area: playboard;
+  grid-template-areas:
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
+    "card9 card10 card11 card12"
+    "card13 card14 card15 card16";
+}
+footer {
+  font-weight: 700;
+  background-color: var(--colorWhite);
+  justify-content: space-around;
+  display: flex;
+  border-top: solid 1px var(--colorBasicBlack);
+}
+#scoreboard p {
+  font-size: var(--fontSizeH2);
+}
+div h2 {
+  color: var(--colorBasicBlack);
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  height: fit-content;
+  color: var(--colorBasicBlack);
+  font-weight: 700;
+  font-size: var(--fontSizeH5);
+  margin: 1rem;
+  margin-right: 10%;
+  padding: 0.5rem 1rem;
+  outline: solid 4px var(--colorBasicBlack);
+}
+button:hover {
+  color: whitesmoke;
+  outline: none;
+  text-shadow: none;
+  background-color: var(--colorBasicBlack);
+  outline: solid 4px var(--colorBasicBlack);
+}
+button:focus {
+  color: yellow;
+  outline: none;
+  text-shadow: none;
+  background-color: var(--colorBasicBlack);
+  outline: solid 4px var(--colorBasicBlack);
+}
+#start {
+  font-size: var(--fontSizeH1);
+  outline-width: 8px;
+  position: absolute;
+  right: 45%;
+  top: 42%;
+}
+li {
+  font-size: var(--fontSizeH5);
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+#win-msg {
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  font-size: var(--fontSizeBase);
+  text-align: center;
+  top: 25%;
+  transform: translateY(50%);
+  right: 50%;
+  transform: translateX(50%);
+  width: 50%;
+  outline-width: 8px;
+  position: absolute;
+  background-color: var(--colorBasicBlack);
+  color: var(--colorWhite);
+  box-shadow: 10px 10px 10px var(--colorBasicBlack);
+}
+#win-msg h2 {
+  color: var(--colorWhite);
+  padding-bottom: 2rem;
+  font-size: var(--fontSizeH3);
+}
+#win-msg p {
+  color: var(--colorWhite);
+}
+.hidden {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s;
+}
+/* Media query */
+@media (max-width: 1200px) {
+  #start {
+    right: 50%;
+    transform: translateX(50%);
+    margin: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #scoreboard {
+    width: 300px;
+    margin: 1rem 0;
+  }
+  #brief {
+    margin: 2rem;
+  }
+  #playboard {
+    justify-content: center;
+    grid-template-columns: 120px 120px 120px 120px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: var(--fontSizeH3);
+  }
+
+  #playboard {
+    margin-right: 0;
+    grid-template-columns: 120px 120px 120px;
+    align-content: center;
+    justify-items: center;
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card6"
+      "card7 card8 card9"
+      "card10 card11 card12"
+      "card13 card14 card15"
+      "card16 card16 card16";
+  }
+}
+@media (max-width: 650px) {
+  footer {
+    display: none;
+  }
+  #win-msg h2 {
+    font-size: var(--fontSizeH4);
+  }
+}

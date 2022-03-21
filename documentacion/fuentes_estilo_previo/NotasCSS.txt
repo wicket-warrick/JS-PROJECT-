@@ -1,0 +1,44 @@
+-----------------FUENTES INTERESANTES-------------
+..Montserrat
+..Rubik
+..Gotham--
+..Emberly--
+..Morganite--
+..Aileron--
+..Space Mono
+..Botera--
+..Poppins
+..Nunito
+..Nunito sans
+..IBM PLEX
+..Alegreya
+..Minion --
+..Alegreya Sans
+..Futura--
+..Bodoni
+..Rockwell--
+..Helvetica
+..Frutiguer--
+..Swift--
+..FF DIN--
+..Geomanist--
+.. Pairings--
+..VT323 (pixel font)
+..Press Start 2P (pixel font)
+(si tienen -- no aparecen en google fonts)
+------------------TAMAÑO DE LAS FUENTES------------
+..Base Font Size:18px
+..Tiny text:11.5px
+..Caption text:14.4px
+..Heading 5:22.5px
+..Heading 4:28.1px
+..Heading 3:35.2px
+..Heading 2:43.9px
+..Heading 1:54.9px
+ ----------------COLORES-------------
+ paletta creada en coolors.co
+ ..Color Basic Black: #1B2021;
+ ..Color Grey: #7A7D7D;
+ ..Color WarmRed: #FC440F;
+ ..Color Rare Blue: #473bf0;
+ ..Color White: #fbfffe;

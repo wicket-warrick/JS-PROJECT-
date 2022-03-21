@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEMORY EMOJIS</title>
+    <meta name="author" content="Juan Fernández & Hugo Suárez" />
+    <meta
+      name="description"
+      content="Hack A Boss Bootcamp_Memory Emojis Proyect_2022"
+    />
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/cards.css" />
+    <link rel="icon" href="./imaxes/icono.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>MEMORY EMOJIS</h1>
+      <button id="reset">Reset</button>
+    </header>
+    <main>
+      <div id="win-msg" class="hidden">
+        <h2 id="h2-win-msg"></h2>
+
+        <p id="p-win-msg"></p>
+      </div>
+      <button id="start">Start</button>
+      <section id="playboard" class="hidden">
+        <article class="card" data-card-img="computer">
+          <div class="front">💻</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="computer">
+          <div class="front">💻</div>
+          <div class="back"></div>
+        </article>
+        <article class="card" data-card-img="lion">
+          <div class="front">🦁</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="lion">
+          <div class="front">🦁</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="poo">
+          <div class="front">💩</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="poo">
+          <div class="front">💩</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="robot">
+          <div class="front">🤖</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="robot">
+          <div class="front">🤖</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="glasses guy">
+          <div class="front">🤓</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="glasses guy">
+          <div class="front">🤓</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="frozen guy">
+          <div class="front">🥶</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="frozen guy">
+          <div class="front">🥶</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="happy guy">
+          <div class="front">😃</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="happy guy">
+          <div class="front">😃</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="mechanic">
+          <div class="front">👨‍🔧</div>
+          <div class="back"></div>
+        </article>
+
+        <article class="card" data-card-img="mechanic">
+          <div class="front">👨‍🔧</div>
+          <div class="back"></div>
+        </article>
+      </section>
+      <div id="scoreboard">
+        <h2>Intentos:</h2>
+        <p id="intents">0</p>
+      </div>
+      <aside id="brief">
+        <h2>Instrucciones</h2>
+        <ul>
+          <li>Pulsa START para empezar</li>
+          <li>
+            Voltea las cartas de dos en dos y busca parejas de cartas iguales.
+          </li>
+          <li>
+            Si las cartas no son iguales se darán la vuelta tras un segundo,
+            ¡aprovecha para memorizarlas!
+          </li>
+          <li>
+            El marcador indica el numero de intentos, ¡cuantos menos, mejor!
+          </li>
+          <li>
+            Juega tantas veces como quieras. Pulsa RESET para volver a empezar.
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <p>Juán Fernández & Hugo Suárez</p>
+      <p>2022</p>
+      <p>Hack A Boss Code Bootcamp</p>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
