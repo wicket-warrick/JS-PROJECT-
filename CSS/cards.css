@@ -26,6 +26,8 @@ article {
   display: none;
 }
 .front {
+  transition: transform;
+  -webkit-transition: transform;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   background-color: whitesmoke;
@@ -44,9 +46,7 @@ article {
   transition: transform 1s;
   -webkit-transition: transform 1s;
 }
-#empty-cell {
-  display: none;
-}
+
 /* media query */
 
 @media (max-width: 1200px) {
