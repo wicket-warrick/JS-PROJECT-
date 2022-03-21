@@ -152,8 +152,10 @@ li {
   text-align: center;
   top: 25%;
   transform: translateY(50%);
+  -webkit-transform: translateY(50%);
   right: 50%;
   transform: translateX(50%);
+  -webkit-transform: translateX(50%);
   width: 50%;
   outline-width: 8px;
   position: absolute;
@@ -179,6 +181,7 @@ li {
   #start {
     right: 50%;
     transform: translateX(50%);
+    -webkit-transform: translateX(50%);
     margin: 0;
   }
   main {

@@ -2,8 +2,10 @@ article {
   width: 160px;
   height: 200px;
   perspective: 500px;
-  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  /* transition: transform 1s; */
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   margin: 0.5rem;
 }
 
@@ -25,6 +27,7 @@ article {
 }
 .front {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   background-color: whitesmoke;
   text-align: center;
   font-size: 128px;
@@ -36,7 +39,9 @@ article {
 .card.flipped {
   pointer-events: none;
   transform: rotateY(180deg);
-  transition: -webkit-transform 1s;
+  -webkit-transform: rotateY(180deg);
+
+  transition: transform 1s;
 }
 #empty-cell {
   display: none;
