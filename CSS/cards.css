@@ -6,7 +6,7 @@ article {
   -webkit-transition: transform 1s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
 
 .front,
@@ -21,14 +21,12 @@ article {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   user-select: none;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .display-none {
   display: none;
 }
 .front {
-  transition: transform;
-  -webkit-transition: transform;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
   background-color: whitesmoke;
@@ -52,8 +50,8 @@ article {
 
 @media (max-width: 1200px) {
   article {
-    width: 100px;
-    height: 120px;
+    width: 80px;
+    height: 100px;
   }
   .front {
     font-size: 64px;
