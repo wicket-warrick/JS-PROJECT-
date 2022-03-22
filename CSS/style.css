@@ -151,8 +151,6 @@ li {
   font-size: var(--fontSizeBase);
   text-align: center;
   top: 25%;
-  transition: transform;
-  -webkit-transition: transform;
   transform: translateY(50%);
   -webkit-transform: translateY(50%);
   right: 50%;
@@ -181,8 +179,6 @@ li {
 /* Media query */
 @media (max-width: 1200px) {
   #start {
-    transition: transform;
-    -webkit-transition: transform;
     right: 50%;
     transform: translateX(50%);
     -webkit-transform: translateX(50%);
